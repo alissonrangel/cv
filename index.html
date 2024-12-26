@@ -15,14 +15,32 @@
 
     <style>
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+      .darkk{
+        background-color: #666 !important;
+        color: #aaa !important;
+      }
+      .w3-container.dark{
+        background-color: #353535 !important;
+        color: #aaa !important;
+        box-shadow: 0 0 10px 0 teal;
+      }
+      .w3-container.light{
+        background-color: #fff !important;
+        color: #757575 !important;
+      }
+      footer div a{
+        margin-left: 10px;
+        margin-right: 10px;        
+      }
     </style>
     
   </head>
 
-  <body class="w3-light-grey" cz-shortcut-listen="true">
+  <body class="w3-light-grey darkk" cz-shortcut-listen="true">
   
     <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <div id="page-container" class="w3-content w3-margin-top darkk" style="max-width:1400px;">
   
       <!-- The Grid -->
       <div class="w3-row-padding">
@@ -30,12 +48,18 @@
         <!-- Left Column -->
         <div class="w3-third">
   
-          <div class="w3-white w3-text-grey w3-card-4">
-            <!-- @falvojr: This container has been modified to not use a profile picture. -->
-            <div class="w3-container">
-              <h2>Alisson Rangel Alves Escórcio de Carvalho</h2>
+          <div class="w3-white w3-text-grey w3-card-4 darkk">            
+            <div class="w3-display-container">
+              <button style="width: 100%; color: #757575; cursor: pointer;" onclick="toggleThemme()" class="">Mudar para Light</button>
+              <img src="foto.png" style="width:100%" alt="Avatar">
+              <div class="w3-display-bottomleft w3-container w3-text-white">
+                <h3>Alisson Rangel A. E. de Carvalho</h3>
+              </div>
             </div>
-            <div class="w3-container">
+            <!-- <div class="w3-container">
+              <h2>Alisson Rangel Alves Escórcio de Carvalho</h2>
+            </div> -->
+            <div class="w3-container dark">
               <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Desenvolvedor Fullstack</p>
               <!-- <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Estudante de Desenvolvimento Front-End</p> -->
               <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Teresina - PI, Brasil</p>
@@ -97,41 +121,39 @@
         <!-- Right Column -->
         <div class="w3-twothird">
     
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sobre</h2>
-            <p>Gostaria de trabalhar onde a minha experiência de 31 anos, possa contribuir com o
-              desenvolvimento da empresa, agregando valores e trocando informações que me permitam
-              aperfeiçoamento profissional, utilizando de minhas habilidades técnicas.</p>
+          <div class="w3-container w3-card w3-white w3-margin-bottom dark">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sobre</h2>            
+            <p style="text-align: justify;">
+              Profissional formado em Engenharia de Computação no IFCE. Possuidor de duas especializações: Desenvolvimento de Aplicações para Dispositivos Móveis (APP'S) pela Faculdade Unyleya e Engenharia de Software pela faculdade Estácio de Teresina-PI. Gosta muito de resolver problemas de lógica e desenvolver sistemas web. Atualmente em constante estudos na parte de Front-End e Back-End com Javascript, além de formação mobile em Android com Kotlin.
+            </p>
           </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container w3-card w3-white w3-margin-bottom dark">
             <h2 class="w3-text-grey w3-padding-16">
               <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiências
             </h2>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>Petrobras Biocombustível - Prestação de Serviços pela Kempetro Engenharia</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Janeiro de 2019 - <span class="w3-tag w3-teal w3-round">Aual</span></h6>
-              <p>Fiscal de campo de contrato; Função de líder de equipe no setor da balança e faturamento na usina de biodiesel em candeias; Faturamento de notas fiscais para expedição de B100 (Biodiesel) e produtos especiais; Tratamento 
-                das notas fiscais de matérias primas e insumos recebidos, entrada de mercadoria (MIGO) no 
-                sistema SAP/R3; Controle de entrada, saída e pesagem de carretas; Atuando na automatização de 
-                processos SAP-Excel; Executar serviços de apoio nas áreas de recursos de administração, 
-                finanças e logística; Atendimento de fornecedores e clientes interno e externo, fornecendo e 
-                recebendo informações sobre produtos e serviços; Tratamento de documentos variados, cumprindo 
-                todo o procedimento necessário referente aos mesmos; Arquivamento de documentos;</p>
-              <hr>
+              <h5 class="w3-opacity"><b>
+                BEPiD
+              </b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Setembro de 2014 - Dezembro de 2015<!-- <span class="w3-tag w3-teal w3-round">Aual</span>--></h6>
+              <p>
+                Participação no Programa Bepid - Programa Brasileiro para Desenvolvimento em iOS, que permitiu a formação no desenvolvimento de aplicativos para iphone e ipad com uma carga horária total de 1060 horas.
+              </p>
+              <!-- <hr> -->
             </div>
-            <div class="w3-container">
+            <!-- <div class="w3-container">
               <h5 class="w3-opacity"><b>TODO</b></h5>
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - FIM</h6>
               <p>TODO</p>
-            </div>
+            </div> -->
           </div>
   
-          <div class="w3-container w3-card w3-white">
+          <div class="w3-container w3-card w3-white dark w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16">
               <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação
             </h2>
-            <div class="w3-container">
+            <!-- <div class="w3-container">
               <h5 class="w3-opacity"><b>Digital Innovation One (DIO)</b></h5>
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - <span class="w3-tag w3-teal w3-round">Atual</span></h6>
               <p>
@@ -145,33 +167,63 @@
                 <li><a href="https://www.dio.me/certificate/64CE8868" target="_blank">Curso: Formação CSS Web Developer (46h)</a></li>
               </ul>
               <hr>
+            </div> -->
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Instuto Federal de Educação, Ciência e Tecnologia do Ceará</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto de 2010 - Dezembro de 2016</h6>
+              <p>Bacharelado em Engenharia de Computação</p>
             </div>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>Centro Educacional Teodoro Sampaio</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1993 - 1995</h6>
-              <p>Técnico em Contabilidade</p>
+              <h5 class="w3-opacity"><b>Faculdade Unyleya</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fevereiro de 2017 - Junho de 2018</h6>
+              <p>Especialização em Desenvolvimento de Aplicativos Móveis</p>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Faculdade Estácio de Teresina-PI</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Novembro de 2019 - Outubro de 2021</h6>
+              <p>Especialização em Engenharia de Software</p>
             </div>
           </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container w3-card w3-white w3-margin-bottom dark">
             <h2 class="w3-text-grey w3-padding-16">
               <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projetos
             </h2>
             <div class="w3-container">
               <h6 class="w3-text-teal">
                 <i class="fa fa-github fa-fw w3-margin-right"></i>
+                <a href="https://github.com/alissonrangel/node-api-backend-tweeter-clone" target="_blank">alissonrangel/node-api-backend-tweeter-clone</a>
+              </h6>
+              <p>Api feita em NodeJs para servir de backend para o projeto de clone do Twitter feita como aula do curso de NodeJs da B7web</p>
+              <hr>
+              <h6 class="w3-text-teal">
+                <i class="fa fa-github fa-fw w3-margin-right"></i>
+                <a href="https://github.com/alissonrangel/live-classificados-nextjs15" target="_blank">alissonrangel/live-classificados-nextjs15</a>
+              </h6>
+              <p>Projeto de classificados de carros feito na live do Bonieky Lacerda no youtube</p>
+              <hr>
+              <h6 class="w3-text-teal">
+                <i class="fa fa-github fa-fw w3-margin-right"></i>
+                <a href="https://github.com/alissonrangel/desafio-jogo-memoria/tree/main" target="_blank">alissonrangel/desafio-jogo-memoria</a>
+              </h6>
+              <p>Jogo da memória com Emojis Utilizando Javascript desenvolvido como desafio de uma aula da Dio</p>
+            
+              <!-- 
+              <hr>
+              <h6 class="w3-text-teal">
+                <i class="fa fa-github fa-fw w3-margin-right"></i>
                 <a href="LINK_GITHUB" target="_blank">USUARIO_GITHUB/REPO</a>
               </h6>
               <p>TODO</p>
-              <hr>
+              <hr> -->
             </div>
-            <div class="w3-container">
+            <!-- <div class="w3-container">
               <h6 class="w3-text-teal">
                 <i class="fa fa-gitlab fa-fw w3-margin-right"></i>
                 <a href="LINK_GITLAB" target="_blank">USUARIO_GITLAB/REPO</a>
               </h6>
               <p>TODO</p>
-            </div>
+            </div> -->
           </div>
   
           <!-- End Right Column -->
@@ -183,13 +235,38 @@
       <!-- End Page Container -->
     </div>
   
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <footer class="w3-container w3-teal w3-center w3-margin-top dark">
       <p>Minhas Redes Sociais</p>
-      <a href="https://github.com/JorgeSantosxp" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/jorge-santos-41774793" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <div>
+        <a href="https://github.com/alissonrangel" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/alisson-rangel" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>      
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </footer>
   
+    <script>
+      function toggleThemme() {
+        const dark = document.querySelectorAll('.w3-container.dark')        
+        const light = document.querySelectorAll('.w3-container.light')        
+        if (dark.length > 0) {
+          for (const element of dark) {
+            element.classList.remove('dark')
+            element.classList.add('light')
+          }
+          document.querySelector('button').classList.toggle('darkk')
+          document.querySelector('button').innerHTML = "Mudar para Dark"
+        }else {
+          for (const element of light) {
+            element.classList.remove('light')
+            element.classList.add('dark')            
+          }
+          document.querySelector('button').classList.toggle('darkk')
+          document.querySelector('button').innerHTML = "Mudar para Light"
+        }
+        document.querySelector('body').classList.toggle('darkk')
+        document.querySelector('#page-container').classList.toggle('darkk')
+      }
+    </script>
   </body>
 
 </html>

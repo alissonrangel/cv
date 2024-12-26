@@ -155,3 +155,7 @@ Sobre html: https://developer.mozilla.org/pt-BR/docs/Web/HTML
 
 Emojis: https://www.w3schools.com/charsets/ref_emoji.asp
 
+### Desafio Respondido por Alisson Rangel
+
+- Acrescentei a foto da pessoa no template;
+- Acrescentei um botão que ao clicá-lo ele alterna o tema entre dark e light.
