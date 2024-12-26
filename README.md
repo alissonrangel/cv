@@ -159,3 +159,7 @@ Emojis: https://www.w3schools.com/charsets/ref_emoji.asp
 
 - Acrescentei a foto da pessoa no template;
 - Acrescentei um botão que ao clicá-lo ele alterna o tema entre dark e light.
+
+### Link para o site
+
+<a href="https://alissonrangel.github.io/cv/" target="_blank">https://alissonrangel.github.io/cv/</a>
